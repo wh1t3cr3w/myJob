@@ -9,6 +9,32 @@
      box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Poppins';
+    src: url(/fonts/Poppins-Regular.woff) format('woff');
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(/fonts/Poppins-Medium.woff) format('woff');
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(/fonts/Poppins-Bold.woff) format('woff');
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
 body{
     font-family: 'Poppins' , sans-serif;
     font-weight: 400;
