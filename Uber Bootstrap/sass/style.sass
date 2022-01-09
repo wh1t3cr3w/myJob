@@ -11,6 +11,12 @@ nav
   height: 50px
   background-color: #212121
 
+header nav
+  top: 0
+  position: fixed
+  width: 100%
+  z-index: 20
+
 .menu
   display: flex
   justify-content: space-between
@@ -31,6 +37,7 @@ nav
   width: 100%
   height: 84px
   background-color: rgba(0, 0, 0, 0.6)
+  margin-top: 50px
 
   .subheader_logo
     display: block
@@ -135,15 +142,26 @@ nav
     color: #fff
     text-transform: uppercase
 
-  .list_header
-    margin-top: 33px
-    color: #222
-    font-weight: 700
-    font-size: 38px
-    line-height: 48px
-    text-transform: uppercase
-    text-align: center
+.mobile .mobile_btn
+  display: block
+  margin: 0 auto
+  height: 27px
+  background-color: #000
+  font-weight: 400
+  font-size: 11px
+  color: #fff
+  text-transform: uppercase
 
+.list_job .list_header, .mobile .mobile_header
+  margin-top: 33px
+  color: #222
+  font-weight: 700
+  font-size: 38px
+  line-height: 48px
+  text-transform: uppercase
+  text-align: center
+
+.list_job
   .list_icons
     margin-top: 33px
 
@@ -164,8 +182,9 @@ nav
       .list_icon_img
         display: block
         margin: 0 auto
-        margin-top: 25 px
-        text-align: center
+        margin-top: 25px
+
+        /* text-align: center;
 
     .list_text
       font-size: 17px
@@ -175,3 +194,123 @@ nav
       font-size: 17px
       line-height: 21px
       color: #1EACC7
+
+.mobile
+  min-height: 864px
+  padding: 48px 0 79px 0
+  background: url(/img/bg/mobile_bg.png) center (center / cover) no-repeat
+
+  .mobile_tetle
+    font-weight: 400
+    font-size: 17px
+    color: #222222
+    text-align: center
+    margin-top: 19px
+
+  .mobile_item
+    position: relative
+    width: 320px
+    height: 280px
+    margin: 0 auto
+    margin-bottom: 19px
+    padding-top: 92px
+
+    .mobile_item_subtitle
+      color: #fff
+      font-size: 24px
+      font-weight: 400
+      line-height: 31px
+      text-transform: uppercase
+      text-align: center
+
+    .mobile_item_plus
+      display: flex
+      justify-content: center
+      justify-items: center
+      position: absolute
+      bottom: 35px
+      left: 50%
+      transform: translateX(-50%)
+      cursor: pointer
+      width: 26px
+      height: 26px
+      background-color: #000
+      margin: 0 auto
+      padding: 6px
+      border-radius: 100%
+
+      img
+        display: block
+
+  .row
+    margin-top: 32px
+
+  .mobile_item_1
+    background: url(/img/cards/Карточка\ 1.png) center (center / cover) no-repeat
+
+  .mobile_item_2
+    background: url(/img/cards/Карточка\ 2.png) center (center / cover) no-repeat
+
+  .mobile_item_3
+    background: url(/img/cards/Карточка\ 3.png) center (center / cover) no-repeat
+
+  .mobile_item_4
+    background: url(/img/cards/Карточка\ 4.png) center (center / cover) no-repeat
+
+  .mobile_item_5
+    background: url(/img/cards/Карточка\ 5.png) center (center / cover) no-repeat
+
+  .mobile_item_6
+    background: url(/img/cards/Карточка\ 6.png) center (center / cover) no-repeat
+
+.car
+  min-height: 890px
+
+  .car_top
+    min-height: 502px
+    background-color: #070716
+    padding-top: 54px
+
+    .car_btn
+      display: block
+      margin: 0 auto
+      height: 27px
+      background-color: #fff
+      font-weight: 400
+      font-size: 11px
+      color: #000
+      text-transform: uppercase
+
+    .car_header
+      margin-top: 33px
+      color: #fff
+      font-weight: 700
+      font-size: 38px
+      line-height: 48px
+      text-transform: uppercase
+      text-align: center
+
+    .car_title
+      font-weight: 400
+      font-size: 17px
+      color: #fff
+      text-align: center
+      margin-top: 19px
+
+    .car_img
+      display: block
+      left: 50%
+      margin-right: -50%
+      transform: translate(-50%, 54px)
+
+  .car_bottom
+    min-height: 397px
+    padding-top: 209px
+    background: url(/img/bg/Подложка.png) center (center / cover) no-repeat
+
+    .car_bottom_dscr
+      text-align: center
+      font-weight: 300
+      font-size: 17px
+      line-height: 24px
+      color: #222
