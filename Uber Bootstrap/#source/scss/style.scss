@@ -1,0 +1,369 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  position: relative;
+}
+
+nav {
+  height: 50px;
+  background-color: #212121;
+}
+
+header nav {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 70px;
+  margin: 0;
+
+  .menu_item {
+    border-right: dotted 2px black;
+    padding-right: 28px;
+  }
+
+  .menu_link {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
+  }
+}
+
+.subheader {
+  position: absolute;
+  width: 100%;
+  height: 84px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 50px;
+
+  .subheader_logo {
+    display: block;
+    max-width: 100%;
+    margin-top: 16px;
+  }
+
+  .subheader_official {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    opacity: 0.5;
+    margin-top: 6px;
+  }
+
+  .subheader_call {
+    counter-reset: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 19px;
+    text-align: right;
+  }
+
+  .subheader_phon {
+    display: block;
+    margin-top: 8px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 12px;
+  }
+
+  .subheader_btn {
+    width: 172px;
+    height: 46px;
+    margin-top: 19px;
+    background-image: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
+
+.promo {
+  min-height: 800px;
+  background: url(/img/bg/uber_bg.png) center (center / cover) no-repeat;
+  padding: 150px 0 135px 0;
+
+  .promo_header {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 60px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .promo_subheader {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 36px;
+    margin: 0;
+    margin-top: 22px;
+    text-align: center;
+  }
+
+  .promo_descr {
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .promo_btn {
+    display: block;
+    margin: 118px auto 0 auto;
+    width: 259px;
+    height: 63px;
+    background-image: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
+
+.list_job {
+  min-height: 800px;
+  padding: 18px 43px 50px 33px;
+
+  .list_btn {
+    display: block;
+    margin: 0 auto;
+    height: 27px;
+    background-color: #000;
+    font-weight: 400;
+    font-size: 11px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
+
+.mobile .mobile_btn {
+  display: block;
+  margin: 0 auto;
+  height: 27px;
+  background-color: #000;
+  font-weight: 400;
+  font-size: 11px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.list_job .list_header, .mobile .mobile_header {
+  margin-top: 33px;
+  color: #222;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 48px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.list_job {
+  .list_icons {
+    margin-top: 33px;
+  }
+
+  .list_icon {
+    max-width: 100%;
+    min-height: 150px;
+    margin-top: 25px;
+  }
+
+  .list_icons {
+    .list_icon_blue_block {
+      width: 116px;
+      height: 116px;
+      border-radius: 100%;
+      background-color: #1EACC7;
+      float: left;
+      margin-right: 25px;
+
+      .list_icon_img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 25px;
+
+        /* text-align: center; */
+      }
+    }
+
+    .list_text {
+      font-size: 17px;
+      line-height: 21px;
+    }
+
+    .list_text_blue {
+      font-size: 17px;
+      line-height: 21px;
+      color: #1EACC7;
+    }
+  }
+}
+
+.mobile {
+  min-height: 864px;
+  padding: 48px 0 79px 0;
+  background: url(/img/bg/mobile_bg.png) center (center / cover) no-repeat;
+
+  .mobile_tetle {
+    font-weight: 400;
+    font-size: 17px;
+    color: #222222;
+    text-align: center;
+    margin-top: 19px;
+  }
+
+  .mobile_item {
+    position: relative;
+    width: 320px;
+    height: 280px;
+    margin: 0 auto;
+    margin-bottom: 19px;
+    padding-top: 92px;
+
+    .mobile_item_subtitle {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 31px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .mobile_item_plus {
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      position: absolute;
+      bottom: 35px;
+      left: 50%;
+      transform: translateX(-50%);
+      cursor: pointer;
+      width: 26px;
+      height: 26px;
+      background-color: #000;
+      margin: 0 auto;
+      padding: 6px;
+      border-radius: 100%;
+
+      img {
+        display: block;
+      }
+    }
+  }
+
+  .row {
+    margin-top: 32px;
+  }
+
+  .mobile_item_1 {
+    background: url(/img/cards/Карточка\ 1.png) center (center / cover) no-repeat;
+  }
+
+  .mobile_item_2 {
+    background: url(/img/cards/Карточка\ 2.png) center (center / cover) no-repeat;
+  }
+
+  .mobile_item_3 {
+    background: url(/img/cards/Карточка\ 3.png) center (center / cover) no-repeat;
+  }
+
+  .mobile_item_4 {
+    background: url(/img/cards/Карточка\ 4.png) center (center / cover) no-repeat;
+  }
+
+  .mobile_item_5 {
+    background: url(/img/cards/Карточка\ 5.png) center (center / cover) no-repeat;
+  }
+
+  .mobile_item_6 {
+    background: url(/img/cards/Карточка\ 6.png) center (center / cover) no-repeat;
+  }
+}
+
+.car {
+  min-height: 890px;
+
+  .car_top {
+    min-height: 502px;
+    background-color: #070716;
+    padding-top: 54px;
+
+    .car_btn {
+      display: block;
+      margin: 0 auto;
+      height: 27px;
+      background-color: #fff;
+      font-weight: 400;
+      font-size: 11px;
+      color: #000;
+      text-transform: uppercase;
+    }
+
+    .car_header {
+      margin-top: 33px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 48px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .car_title {
+      font-weight: 400;
+      font-size: 17px;
+      color: #fff;
+      text-align: center;
+      margin-top: 19px;
+    }
+
+    .car_img {
+      display: block;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, 54px);
+    }
+  }
+
+  .car_bottom {
+    min-height: 397px;
+    padding-top: 209px;
+    background: url(/img/bg/Подложка.png) center (center / cover) no-repeat;
+
+    .car_bottom_dscr {
+      text-align: center;
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 24px;
+      color: #222;
+    }
+  }
+}
